@@ -40,28 +40,28 @@ const korgerList = [
 const newFoods = [
   {
   item: 7,
-    name: 'Hotdogs',
-    price: 4.50
+  name: 'Hotdogs',
+  price: 4.50
   },
   {
     item: 7,
-      name: 'Rice',
-      price: 10.50
+    name: 'Rice',
+    price: 10.50
   },
   {
     item: 7,
-      name: 'Beans',
-      price: 7.50
+    name: 'Beans',
+    price: 7.50
   },
   {
     item: 7,
-      name: 'Relish',
-      price: 9.50
+    name: 'Relish',
+    price: 9.50
   },
   {
     item: 7,
-      name: 'Onions',
-      price: 13.50
+    name: 'Onions',
+    price: 13.50
   }
 ]
 
@@ -91,14 +91,14 @@ const newFoods = [
 //     price: 13.50
 // };
 
-const addNewItem = (newItem) => {
+// const addNewItem = (newItem) => {
   for(newItem of newFoods) {
     newItem.item = korgerList[korgerList.length -1].item + 1;
     const d = new Date();
     newItem.dateCreated = (`${d.getMonth()+1}/${d.getDate()+1}/${d.getFullYear()} ${d.toLocaleTimeString()}`);
     korgerList.push(newItem);
   }
-}
+// }
 
 // const addNewItem = (newItem) => {
 //   newItem.item = korgerList[korgerList.length -1].item + 1;
@@ -114,9 +114,9 @@ const addNewItem = (newItem) => {
 // addNewItem(Hotdogs);
 
 console.log(korgerList);
-console.log(`Items that are over $8 are:`);
-for(items of korgerList) {
-  if (items.price > 8) {
-    console.log(`${items.name}`)
-  };
-}
+// console.log(`Items that are over $8 are:`);
+// for(items of korgerList) {
+//   if (items.price > 8) {
+//     console.log(`${items.name}`)
+//   };
+// }
